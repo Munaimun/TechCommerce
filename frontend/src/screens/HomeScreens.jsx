@@ -11,7 +11,7 @@ const HomeScreens = () => {
     const fetchProducts = async () => {
       try {
         // Getting the data from backend
-        const { data } = await axios.get('/api/products');
+        const { data } = await axios.get('https://techcommerce-backend.onrender.com');
         // Ensure data.products is an array before setting state
         if (Array.isArray(data.products)) {
           setProducts(data.products);
